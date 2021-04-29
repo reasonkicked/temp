@@ -4,9 +4,10 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
 from secrets_manager import get_secret
+from secrets_secrets_manager_03 import get_secret
 
 app = Flask(__name__)
-db_config = get_secret()
+db_config = secrets_manager_03.get_secret()
 
 app.config['SQLALCHEMY_DATABASE_URI'] = (
     f'postgresql+psycopg2://{db_config["username"]}:' +

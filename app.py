@@ -14,14 +14,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = (
     f'{db_config["host"]}/' +
     f'{db_config["db_name"]}'
 )
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-app.config['SQLALCHEMY_DATABASE_URI'] = (
-    f'postgresql+psycopg2://{db_username}:' +
-    f'{db_password}@' +
-    f'{db_url}/' +
-    f'{db_db}'
-)
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

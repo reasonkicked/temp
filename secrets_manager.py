@@ -5,7 +5,7 @@
 import boto3
 import base64
 from botocore.exceptions import ClientError
-import Json
+import json
 
 
 def get_secret():
